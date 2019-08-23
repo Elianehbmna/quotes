@@ -6,7 +6,8 @@
     
       <li>{{quote.name}}</li>
     <button (click)='toggleDetails(i)'>Toggle Details</button>
-    <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'completeQuotes($event,i)'></app-quote-detail>
+  
+    <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'deleteQuotes($event,i)'></app-quote-detail>
   </div>
 </ul>
 <p *ngIf='quotez.length > 5'>You have too many goals</p>
