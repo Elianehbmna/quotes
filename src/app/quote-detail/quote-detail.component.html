@@ -14,21 +14,19 @@
     
     <div class="twelve wide column">
     
-      <ul class="ui big horizontal list voters">
-        <li class="item">
+      <div class="ui big horizontal list voters">
+          <div class="item">
           <a href (click)="likeVote()">
-          <!--<i class="arrow up icon"></i>-->
-            upvote
-          </a>
-        </li>
+              <img src="quotes/src/up.png" >
+            </a>
+          </div>
     
-        <li class="item">
+          <div class="item">
           <a href (click)="dislikeVote()">
-          <i class="arrow down icon"></i>
-            downvote
+              <img src="quotes/src/up.png" >
           </a>
-        </li>
+        </div>
     
-      </ul>
+      </div>
     </div>
     <button (click)= 'quoteDelete(true)'  class="btn btn-outline-danger">Delete Goal</button>
