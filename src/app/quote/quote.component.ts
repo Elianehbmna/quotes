@@ -7,14 +7,12 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotez:Quote[] = [
-    new Quote(1, 'Watch finding Nemo', 'Find an online version and watch merlin find his son','me',new Date(2019,3,14)),
-    new Quote(2,'Buy Cookies','I have to buy cookies for the parrot','you',new Date(2019,6,9)),
-    new Quote(3,'Get new Phone Case','Diana has her birthday coming up soon','us',new Date(2019,1,12)),
+    new Quote(1, 'No one can make you feel inferior without your consent', 'Irene','Eleanor Roosevelt',new Date(2019,3,14)),
+    new Quote(2,'The only true wisdom is in knowing you know nothing','Diola','socrate',new Date(2019,6,9)),
+    new Quote(3,'Count your age by friends, not years. Count your life by smiles, not tears.','Cedric','john lenon',new Date(2019,1,12)),
 
   ];
-  /*toggleDetails(index){
-    this.quotez[index].showDescription = !this.quotez[index].showDescription;
-  }*/
+ 
  
   deleteQuotes(isComplete, index){
     if (isComplete) {

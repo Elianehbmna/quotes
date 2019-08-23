@@ -2,31 +2,32 @@
       <div class="ui statistic">
         
         <div class="value">
-          {{ votes }}
+        <p>votes:{{ votes }}</p>
         </div> 
-        <div class="label">
-          votes:
-        </div>
+        
     
       </div>
     
     </div>
-    
     <div class="twelve wide column">
-    
-      <div class="ui big horizontal list voters">
-          <div class="item">
+     <div class="ui big horizontal list voters">
+    <div class="row">
+    <div class="col-md-6">
+   
+        <div class="item">
           <a href (click)="likeVote()">
-              <img src="quotes/src/up.png" >
+              <img src="up.png" >
             </a>
           </div>
-    
+        </div>
+        <div class="col-md-6">
           <div class="item">
           <a href (click)="dislikeVote()">
-              <img src="quotes/src/up.png" >
+              <img src="original.png" >
           </a>
         </div>
-    
+      </div>
+      </div>
       </div>
     </div>
-    <button (click)= 'quoteDelete(true)'  class="btn btn-outline-danger">Delete Goal</button>
+    <button (click)= 'quoteDelete(true)'  class="btn btn-outline-danger">Delete</button>
