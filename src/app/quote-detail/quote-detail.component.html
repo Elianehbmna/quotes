@@ -1,12 +1,17 @@
 <div class="four wide column center aligned votes">
       <div class="ui statistic">
-        
-        <div class="value">
-        <p>votes:{{ votes }}</p>
+        <div class="container-fluid">
+            <div class="value">
+          <div class="row">
+              <div class="col-md-6">
+                  <p>{{ upvote }}</p>
+              </div>
+              <div class="col-md-6">
+                  <p>{{ downvote }}</p>
+              </div>
+          </div>
         </div> 
-        
-    
-      </div>
+         </div>
     
     </div>
     <div class="twelve wide column">
@@ -28,6 +33,8 @@
         </div>
       </div>
       </div>
+    </div>
       </div>
     </div>
     <button (click)= 'quoteDelete(true)'  class="btn btn-outline-danger">Delete</button>
+   
