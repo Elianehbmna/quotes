@@ -1,5 +1,17 @@
 .card{
-    order: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px #dacece;
-}
+    background-image:url("../header.jpg");
+    background-position: top;
+    background-repeat:no-repeat;
+    background-size: cover;
+    height:900px;
+    width:100%;
+    }
+    .title{
+        text-align: center;
+        right:10px
+
+    }
+   .line{
+    border: 1px solid black;
+   width:20%;
+   }

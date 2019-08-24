@@ -1,13 +1,13 @@
 <div class="container-fluid">
     <h2  class="card-header info-color white-text text-center py-4">post a quote</h2>
-    <div class="card-body px-md-9 pt-4">
+  
     <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
         <div class="row">
         <div class="col-md-6">
         <div class="form-group">
   
             <label for="name">your name</label>
-            <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name='ngModel'>
+            <input type="text"  class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name='ngModel' required >
             <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
                 <p>Name is required</p>
               </div>
@@ -17,7 +17,7 @@
         <div class="form-group">
   
             <label for="name">authors</label>
-            <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.Aname" name="name" #Aname='ngModel'>
+            <input type="text"  class="form-control" id="Aname" [(ngModel)]="newQuote.Aname" name="Aname" #Aname='ngModel' required>
             <div [hidden]="Aname.valid || Aname.pristine" class="alert alert-danger">
                 <p>Name is required</p>
               </div>
@@ -41,7 +41,7 @@
         </div>
         <button type="submit" class="btn btn-success">Add Quote</button>
     </form>
-  </div>
+ 
 </div>
   
   
