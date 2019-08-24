@@ -12,9 +12,13 @@
 
       <br><br><h5 class="text1">Welcome to our Quotes website</h5>
       <hr class="line">
+      <h6 class="text2">hey again,thank you for reaching out to our website page ,</h6>
+      <h6 class="text2">you are free to post anyquote on your mind or view our quotes</h6>
+      <h6 class="text2">you may vote for the quote or dislike it.thank you</h6>
+      
 <br><br><br><div class="row">     
     <div class="col-md-6">
-      
+        <div class="jumbotron">
       <div *ngFor='let quote of quotez;let i = index'>
         <div>
           <h6 id={{i}}>{{quote.description}}</h6>
@@ -29,9 +33,13 @@
   
     
     </div>
+  </div>
     <div class="col-md-6">
+        <div class="jumbotron">
       <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+    </div>
     </div>
   </div>
  
 </div>
+<footer><strong>Copyright 2019</strong></footer>

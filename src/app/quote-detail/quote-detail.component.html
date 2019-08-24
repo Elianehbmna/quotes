@@ -3,10 +3,10 @@
         <div class="container-fluid">
             <div class="value">
           <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-4">
                   <p>{{ upvote }}</p>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-4">
                   <p>{{ downvote }}</p>
               </div>
           </div>
@@ -17,24 +17,27 @@
     <div class="twelve wide column">
      <div class="ui big horizontal list voters">
     <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-4">
    
         <div class="item">
           <a href (click)="likeVote()">
-              <img src="up.png" >
+              Upvote
             </a>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
           <div class="item">
           <a href (click)="dislikeVote()">
-              <img src="original.png" >
+              Downvote
           </a>
+         
         </div>
       </div>
+      <div class="col-md-4">
+          <p (click)= 'quoteDelete(true)' class="delete"  >Delete</p></div>
       </div>
     </div>
       </div>
     </div>
-    <button (click)= 'quoteDelete(true)'  class="btn btn-outline-danger">Delete</button>
+    
    
