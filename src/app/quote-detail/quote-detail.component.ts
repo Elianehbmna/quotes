@@ -14,15 +14,7 @@ export class QuoteDetailComponent implements OnInit {
   quoteDelete(complete:boolean){
     this.isComplete.emit(complete);
   }
-  Up = 0;
-  Down=0;
-
-  constructor() {`  `
-    this.upvote = 0;
-   this.downvote = 0;
-   }
-
-   likeVote(): boolean{
+  likeVote(): boolean{
     this.upvote +=1;
     return false;
   }
@@ -31,6 +23,13 @@ export class QuoteDetailComponent implements OnInit {
    this.downvote -=1;
    return false;
  }
+
+  constructor() {`  `
+  this.upvote = 0;
+  this.downvote = 0;
+   }
+
+  
 
   ngOnInit() {
   }

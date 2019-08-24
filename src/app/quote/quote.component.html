@@ -21,7 +21,7 @@
         <div class="jumbotron">
       <div *ngFor='let quote of quotez;let i = index'>
         <div>
-          <h6 id={{i}}>{{quote.description}}</h6>
+          <h6 myHighlight id={{i}}>{{quote.description}}</h6>
           <h6 id={{i}}>Author:{{quote.Aname}}</h6>
           <h6 id={{i}}>Posted by:{{quote.name}}</h6>
           <h6 id={{i}}>{{quote.completeDate|timeAgo}}</h6>

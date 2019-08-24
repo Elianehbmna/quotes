@@ -10,16 +10,16 @@ constructor(private el: ElementRef) { }
 @Input() defaultColor: string;
 @Input('myHighlight') highlightColor: string;
  
-@HostListener('mouseenter') onMouseEnter() {
-  this.highlight(this.highlightColor || this.defaultColor || 'red');
+@HostListener('click') onClicks() {
+  this.highlight("highliight");
 }
  
-@HostListener('mouseleave') onMouseLeave() {
+@HostListener('dbclick') onDoubleclick() {
   this.highlight(null);
 }
  
 private highlight(color: string) {
-  this.el.nativeElement.style.backgroundColor = color;
+  this.el.nativeElement.style.backgroundColor = "rgb(52, 201, 52)";
 }
  
 }
