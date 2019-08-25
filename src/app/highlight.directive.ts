@@ -14,9 +14,11 @@ constructor(private el: ElementRef) { }
   this.highlight("highliight");
 }
  
-@HostListener('dbclick') onDoubleclick() {
-  this.highlight(null);
+@HostListener("dblclick") onDoubleClicks(){
+  this.highlight("None")
 }
+
+
  
 private highlight(color: string) {
   this.el.nativeElement.style.backgroundColor = "rgb(52, 201, 52)";

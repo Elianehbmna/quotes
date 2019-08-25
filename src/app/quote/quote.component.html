@@ -24,7 +24,7 @@
           <h6 myHighlight id={{i}}>{{quote.description}}</h6>
           <h6 id={{i}}>Author:{{quote.Aname}}</h6>
           <h6 id={{i}}>Posted by:{{quote.name}}</h6>
-          <h6 id={{i}}>{{quote.completeDate|timeAgo}}</h6>
+          <br><h6 id={{i}}>{{quote.completeDate|timeAgo}}</h6>
           <app-quote-detail   (isComplete) = 'deleteQuotes($event,i)' ></app-quote-detail>
         </div>
 
