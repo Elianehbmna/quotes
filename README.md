@@ -20,7 +20,7 @@ it is a website where quotes are shared and have the features of voting and dele
 
 ## The link to live site on GitHub pages:
 
-https://elianehbmna.github.io/elspizzeria/
+https://elianehbmna.github.io/quotes/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
 
