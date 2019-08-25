@@ -36,7 +36,7 @@ export class TimeAgoPipe implements PipeTransform, OnDestroy {
 		} else if (minutes <= 90) {
 			return 'an hour ago';
 		} else if (hours <= 22) {
-			return hours + ' hours ago';
+			return ' now ago';
 		} else if (hours <= 36) {
 			return 'a day ago';
 		} else if (days <= 25) {
@@ -64,13 +64,13 @@ export class TimeAgoPipe implements PipeTransform, OnDestroy {
 		let min = 60;
 		let hr = min * 60;
 		let day = hr * 24;
-		if (seconds < min) { // less than 1 min, update every 2 secs
+		if (seconds < min) { 
 			return 2;
-		} else if (seconds < hr) { // less than an hour, update every 30 secs
+		} else if (seconds < hr) { 
 			return 30;
-		} else if (seconds < day) { // less then a day, update every 5 mins
+		} else if (seconds < day) { 
 			return 300;
-		} else { // update every hour
+		} else { 
 			return 3600;
 		}
 	}
